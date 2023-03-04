@@ -30,11 +30,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ["mb2test.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["django-blog-ac.herokuapp.com", "localhost"]
 
 # Application definition
 
@@ -61,6 +61,8 @@ SITE_ID = 1
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 
 MESSAGE_TAGS = {
